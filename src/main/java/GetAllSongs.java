@@ -38,7 +38,7 @@ public class GetAllSongs {
 //        write your SQL logic in a single line in the problem1.sql file.
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
-
+        sql = "SELECT * FROM song";
         List<Song> songs = new ArrayList<>();
         try {
             Connection connection = ConnectionUtil.getConnection();
